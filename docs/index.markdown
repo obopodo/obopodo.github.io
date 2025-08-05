@@ -1,6 +1,8 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
+Hi, I’m obopodo!
+
+Sound Artist, Musician, Composer, Data Scientist, and former Biophysicist trying to blend all these fields together
+
+Currently based in Limassol, Cyprus
