@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<h2>Projects</h2>
+<ul>
+  {% for post in site.posts %}
+    <li style="margin-bottom:2em; min-height:120px; overflow:auto;">
+      {% if post.cover %}
+        <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}" style="max-width:200px; float:right; margin-left:1em; margin-bottom:0.5em;">
+      {% endif %}
+      <div>
+        <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a>
+        {% if post.date %} <small>{{ post.date | date: '%b %-d, %Y' }}</small>{% endif %}
+        {% if post.excerpt %}
+          <p>{{ post.excerpt }}</p>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>
